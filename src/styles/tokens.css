@@ -1,0 +1,43 @@
+/**
+ * BannerView 3D Design System — Design Tokens
+ *
+ * HSL channel triplets (no `hsl()` wrapper) so Tailwind can apply
+ * `<alpha-value>` for opacity utilities.
+ */
+
+:root,
+.dark {
+  /* Surfaces — Dark theme is the canonical theme */
+  --bv-bg: 222 22% 7%;          /* #0F1115 */
+  --bv-panel: 222 20% 11%;      /* #161A22 */
+  --bv-card: 222 24% 15%;       /* #1C2230 */
+  --bv-border: 220 22% 22%;     /* #2A3345 */
+
+  /* Brand */
+  --bv-primary: 217 91% 60%;    /* #3B82F6 */
+  --bv-primary-fg: 0 0% 100%;
+
+  /* Status */
+  --bv-success: 142 71% 45%;    /* #22C55E */
+  --bv-warning: 38 92% 50%;     /* #F59E0B */
+  --bv-danger: 0 84% 60%;       /* #EF4444 */
+
+  /* Text */
+  --bv-text: 0 0% 100%;             /* #FFFFFF */
+  --bv-text-secondary: 218 18% 72%; /* #AAB4C5 */
+}
+
+/* Optional light theme — kept for future-proofing */
+.light {
+  --bv-bg: 0 0% 100%;
+  --bv-panel: 220 20% 97%;
+  --bv-card: 0 0% 100%;
+  --bv-border: 220 14% 88%;
+  --bv-primary: 217 91% 55%;
+  --bv-primary-fg: 0 0% 100%;
+  --bv-success: 142 71% 38%;
+  --bv-warning: 38 92% 45%;
+  --bv-danger: 0 74% 50%;
+  --bv-text: 222 22% 12%;
+  --bv-text-secondary: 220 12% 38%;
+}
